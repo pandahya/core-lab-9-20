@@ -37,5 +37,17 @@ document.addEventListener('DOMContentLoaded', function () {
       container.appendChild(newImg);
     });
   }
+  let body = document.querySelector('body');
+  function addPoem(){
+    textHolder.forEach((t) => {
+      let newPoem = document.createElement('div');
+      let newText = document.createElement('p');
+      body.appendChild(newPoem);
+      newPoem.classList.add('poem');
+      newPoem.appendChild(newText);
+      newPoem.innerText = t;
+    })
+  }
   addImageElements();
+  addPoem();
 });

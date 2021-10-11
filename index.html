@@ -10,6 +10,35 @@
     <div id="container">
         
     </div>
+
+    <h3>Weng, Hyacinth</h3>
+    <ul>
+        <li>
+            What is the purpose of DOMContentLoaded event listener?
+            <br>
+            <span>to do things when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading</span>
+        </li>
+        <li>
+            Explain how this collage is being generated
+            <br>
+            <span>For each element in the imgLinks array, which consists of a bunch of image links, a new img element is created in the html with the source being that link in the array.</span>
+        </li>
+        <li>
+            Explain how the img elements are being positioned
+            <br>
+            <span>Each img element is getting random number percentages as a left and top css property.</span>
+        </li>
+        <li>
+            What does d represent in line 30? What happens if you change d to a different name?
+            <br>
+            <span>d is a parameter/argument of the function in line 32, representing each element of the imgLinks array as it goes through it. The images won't have a source/won't be loaded if it's changed between line 32 and line 34 where it's used.</span>
+        </li>
+        <li>
+            Look into the arrow function syntax ((d) => {}). What do you think of this syntax as compared to the other function syntax function(d){ }?
+            <br>
+            <span>It's much more compact but is more limited in use. I think if you're doing something more simple it can be quicker to use but probably not with something more complicated or that you need to get more specific with.</span>
+        </li>
+    </ul>
 </body>
 
 <script src="./scripts/main.js"></script>
